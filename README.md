@@ -13,7 +13,7 @@ ToDo List App an app that is used to maintain our daily tasks or display a list 
 
 ### Tasks
 
-- Add task to the list []
+- Add task to the list [x]
 - Remove task from the list []
 - Mark as done []
 - Mark as priority []
