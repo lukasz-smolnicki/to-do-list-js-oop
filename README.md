@@ -13,16 +13,16 @@ ToDo List App an app that is used to maintain our daily tasks or display a list 
 
 ### Tasks
 
-- Add task to the list [x]
-- Remove task from the list []
-- Mark as done []
-- Mark as priority []
+- [x] Add task to the list 
+- [ ] Remove task from the list
+- [ ] Mark as done
+- [ ] Mark as priority
 
 ### List
 
-- Search task []
-- Filter tasks []
-- Sort by name, date []
+- [ ] Search task
+- [ ] Filter tasks
+- [ ] Sort by name, date
 
 ## Setup
 
