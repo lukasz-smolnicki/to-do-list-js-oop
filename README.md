@@ -1,5 +1,6 @@
 # to-do-list-js-opp
-A simple to-do list app build in JS based on classes.
+> A simple to-do list app build in JS based on classes.
+> Live demo [_here_](http://#).
 
 ## General information
 
@@ -17,12 +18,18 @@ ToDo List App an app that is used to maintain our daily tasks or display a list 
 - [ ] Remove task from the list
 - [ ] Mark as done
 - [ ] Mark as priority
+- [ ] Edit task
 
 ### List
 
 - [ ] Search task
 - [ ] Filter tasks
 - [ ] Sort by name, date
+- [ ] Save list in localstorage
+
+<!-- 
+## Screenshots
+![Example screenshot](./img/screenshot.png) -->
 
 ## Setup
 
@@ -32,12 +39,16 @@ Clone the repository to your computer and open the index.html file in any browse
 
 Project is: _in progress_
 
-## Room for Improvement
+## Todo
 
-- Save list in localstorage
-- Add css styles
-- Edit task
-- Voice Capture
+- [ ] Isolate classes
+- [ ] Add css styles and switch to darkmode
+- [ ] Voice Capture
+- [ ] Next todo app in react
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/lukasz-smolnicki/)
 
 
 

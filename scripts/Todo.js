@@ -28,5 +28,13 @@ class Todo {
             const li = document.createElement('li')
             ul.appendChild(li).innerText = task
         })
+        this.clearAddTaskInput()
+    }
+    clearAddTaskInput() {
+        const input = document.querySelector('input')
+        input.value = ''
+    }
+    removeTask() {
+
     }
 }
