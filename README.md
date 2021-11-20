@@ -12,6 +12,10 @@ ToDo List App an app that is used to maintain our daily tasks or display a list 
 
 ## Features
 
+### App
+
+- [ ] Isolate classes
+
 ### Tasks
 
 - [x] Add task to the list 
@@ -41,7 +45,6 @@ Project is: _in progress_
 
 ## Todo
 
-- [ ] Isolate classes
 - [ ] Add css styles and switch to darkmode
 - [ ] Voice Capture
 - [ ] Next todo app in react
