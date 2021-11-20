@@ -14,15 +14,15 @@ ToDo List App an app that is used to maintain our daily tasks or display a list 
 
 ### App
 
-- [ ] Isolate classes
+- [ ]  Separate classes by functionality
 
 ### Tasks
 
 - [x] Add task to the list 
-- [ ] Remove task from the list
-- [ ] Mark as done
-- [ ] Mark as priority
-- [ ] Edit task
+- [x] Remove task from the list
+- [x] Mark as done
+- [x] Mark as important
+- [x] Edit task
 
 ### List
 
