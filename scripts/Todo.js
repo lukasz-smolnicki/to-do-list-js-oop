@@ -25,6 +25,7 @@ class Todo {
     }
     addListForTasks() {
         const ul = document.createElement('ul')
+        ul.innerText = "There are no added tasks in this category"
         document.body.appendChild(ul)
     }
     addTask(value) {
@@ -34,7 +35,7 @@ class Todo {
     addTasksList() {
         const ul = document.querySelector('ul')
         ul.innerText = ''
-        this.tasksList.forEach((task, index) => {
+        this.tasksList.length === 0 ? ul.innerText = "There are no added tasks in this category" : this.tasksList.forEach((task, index) => {
             const li = document.createElement('li')
             ul.appendChild(li).innerText = task
             li.appendChild(this.removeTaskButton(index))
@@ -103,7 +104,5 @@ class Todo {
         buttonCancel.addEventListener('click', () => {
             this.addTasksList()
         })
-
-
     }
 }
