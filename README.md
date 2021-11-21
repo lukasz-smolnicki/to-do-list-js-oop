@@ -12,10 +12,6 @@ ToDo List App an app that is used to maintain our daily tasks or display a list 
 
 ## Features
 
-### App
-
-- [ ]  Separate classes by functionality
-
 ### Tasks
 
 - [x] Add task to the list 
@@ -42,6 +38,10 @@ Clone the repository to your computer and open the index.html file in any browse
 ## Project Status
 
 Project is: _in progress_
+
+## To improvment
+
+- [ ]  Separate classes by functionality
 
 ## Todo
 
