@@ -1,5 +1,5 @@
 class List extends Component {
-    constructor(_setClass, _action) {
+    constructor(_setClass) {
         super(_setClass)
         this.tag = 'ul'
         this.tasksList = []
@@ -7,27 +7,21 @@ class List extends Component {
         this.selectedElement = this.createTag(this.tag)
         // this.selectedElement = this.selectElement(_setClass)
         this.addNewTask('taskAddButton', 'taskAddInput')
-        this.render()
+        this.createList(this.tasksList)
     }
-    render() {
-        this.tasksList.length === 0 ? this.emptyTaskList() : this.tasksList.forEach(element => {
-            console.log(element)
+    //pomysł: setAction dla kilku nie zależnych list
+    createList(list) {
+        this.clearList()
+        list.length === 0 ? this.emptyTaskList() : list.forEach((element) => {
+            new Task('task', element.value, this.selectedElement)
         })
 
-    }
-    update(filteredList) {
-        filteredList.length === 0 ? this.emptyTaskList() : this.tasksList.forEach(element => {
-            console.log(element)
-        })
-
-    }
-    createTaskList() {
-        this.displayList.forEach(element => {
-            console.log(element)
-        })
     }
     emptyTaskList() {
         this.selectedElement.innerText = "There is no tasks"
+    }
+    clearList() {
+        this.selectedElement.innerText = ''
     }
     addNewTask(selectButton, selectInput) {
         const button = document.querySelector(`.${selectButton}`)
@@ -38,8 +32,7 @@ class List extends Component {
                 date: new Date
             })
             input.value = ''
-            this.render()
+            this.createList(this.tasksList)
         })
-
     }
 }
