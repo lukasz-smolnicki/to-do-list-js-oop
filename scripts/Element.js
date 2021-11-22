@@ -15,6 +15,10 @@ class Element {
         const element = document.querySelector(`.${this.setClass}`)
         element.placeholder = _text
     }
+    selectElement(_element) {
+        const element = document.querySelector(`.${_element}`)
+        return (element)
+    }
 }
 class Button extends Element {
     constructor(_setClass, _text) {
@@ -40,18 +44,24 @@ class List extends Element {
         this.tag = 'ul'
         this.tasksList = []
         this.create(this.tag)
+        this.element = this.selectElement(_setClass)
         this.addNewTask('taskAddButton', 'taskAddInput')
         this.render()
     }
     render() {
-        this.tasksList.length === 0 ? this.emptyTaskList() : this.tasksList.forEach(element, () => {
-            console.log('element')
+        this.tasksList.length === 0 ? this.emptyTaskList() : this.tasksList.forEach(element => {
+            console.log(element)
+        })
+
+    }
+    update(filteredList) {
+        filteredList.length === 0 ? this.emptyTaskList() : this.tasksList.forEach(element => {
+            console.log(element)
         })
 
     }
     emptyTaskList() {
-        const tasksList = document.querySelector(`.taskList`)
-        tasksList.innerText = "There is no tasks"
+        this.element.innerText = "There is no tasks"
     }
     addNewTask(selectButton, selectInput) {
         const button = document.querySelector(`.${selectButton}`)
