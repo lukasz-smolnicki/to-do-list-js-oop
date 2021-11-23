@@ -1,20 +1,8 @@
-class Task extends Component {
-    constructor(_setClass, _text, _parentElement) {
-        super(_setClass)
+class Task extends Element {
+    constructor(_parent) {
+        super(_parent)
         this.tag = 'li'
-        this.text = _text
-        this.parentElement = _parentElement
-        this.createTag(this.tag)
-        this.setText()
-    }
-    setText(e) {
-        console.log(e)
-    }
-    createTag(_tagName) {
-        const element = document.createElement(_tagName)
-        element.classList.add(this.setClass)
-        this.parentElement.appendChild(element)
-        const selectedElement = document.querySelector(`.${this.setClass}`)
-        return (element)
+        this.element = this.tagCreate(this.tag)
+        this.tagAppend(this.element)
     }
 }
