@@ -1,7 +1,12 @@
 class Todo {
     constructor() {
-        // new Input('taskAddInput', 'Task value')
-        // new Button('taskAddButton', 'Add task')
-        new List
+        this.render()
+    }
+    render() {
+        const input = new Input
+        const button = new Button
+        const list = new List
+        button.tagAddText('Add task')
+        input.tagAddPlaceholder('Task value')
     }
 }

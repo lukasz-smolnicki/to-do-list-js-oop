@@ -9,13 +9,13 @@ class Element {
     tagAppend(_element) {
         this.parent === undefined ? document.body.appendChild(_element) : this.parent.appendChild(_element)
     }
-    tagAddClass(_setClass) {
-        this.element.classList.add(_setClass)
+    tagAddClass(_addClass) {
+        this.element.classList.add(_addClass)
+    }
+    tagAddText(_addText) {
+        this.element.innerText = _addText
+    }
+    tagAddPlaceholder(_addText) {
+        this.element.placeholder = _addText
     }
 }
-
-
-
-// tagText
-// tagClass
-// tagparent
