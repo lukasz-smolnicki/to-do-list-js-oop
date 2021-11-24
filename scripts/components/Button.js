@@ -5,15 +5,25 @@ class Button extends Element {
         this.element = this.tagCreate(this.tag)
         this.tagAppend(this.element)
     }
-    addTaskToList(_input, _target) {
+    addInputValueToList(_input, _list) {
         this.element.addEventListener('click', () => {
             if (_input.getInputValue() === '') {
                 alert('Enter a value into the text box')
             } else {
-                const inputValue = _input.getInputValue()
+                const inputValue = {
+                    value: _input.getInputValue(),
+                    date: new Date
+                }
                 _input.clearInputValue()
-                _target.pushValueToList(inputValue)
+                _list.pushValueToList(inputValue)
+                _list.render()
             }
+        })
+    }
+    removeElementFromList(_list, _index) {
+        this.element.addEventListener('click', () => {
+            _list.splice(_index, 1)
+            _list.render()
         })
     }
 }

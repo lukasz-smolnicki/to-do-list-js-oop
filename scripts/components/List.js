@@ -9,12 +9,18 @@ class List extends Element {
     }
     pushValueToList(_value) {
         this.taskList.push(_value)
-        console.log(this.taskList)
     }
-    render() {
-        // this.clearList()
-        // this.taskList.length === 0 ? this.emptyTaskList() : this.taskList.forEach((element) => {
-        //     new Task()
-        // })
+    clearList() {
+        this.element.innerHTML = ''
+    }
+    emptyTaskList() {
+        this.element.innerText = 'No tasks'
+    }
+    render(_list = this.taskList) {
+        this.clearList()
+        _list.length === 0 ? this.emptyTaskList() : _list.forEach((element, index) => {
+            const task = new Task(this.element)
+            task.createTask(element, index, this.taskList)
+        })
     }
 }
