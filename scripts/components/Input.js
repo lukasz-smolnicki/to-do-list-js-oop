@@ -5,4 +5,10 @@ class Input extends Element {
         this.element = this.tagCreate(this.tag)
         this.tagAppend(this.element)
     }
+    getInputValue() {
+        return this.element.value
+    }
+    clearInputValue() {
+        this.element.value = ''
+    }
 }
