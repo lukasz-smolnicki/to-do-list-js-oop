@@ -20,7 +20,7 @@ class List extends Element {
         this.clearList()
         _list.length === 0 ? this.emptyTaskList() : _list.forEach((element, index) => {
             const task = new Task(this.element)
-            task.createTask(element, index, this.taskList)
+            task.createTask(element, index, this)
         })
     }
 }

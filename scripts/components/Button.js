@@ -22,7 +22,7 @@ class Button extends Element {
     }
     removeElementFromList(_list, _index) {
         this.element.addEventListener('click', () => {
-            _list.splice(_index, 1)
+            _list.taskList.splice(_index, 1)
             _list.render()
         })
     }
