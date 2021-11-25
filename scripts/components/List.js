@@ -19,8 +19,8 @@ class List extends Element {
     render(_list = this.taskList) {
         this.clearList()
         _list.length === 0 ? this.emptyTaskList() : _list.forEach((element, index) => {
-            const task = new Task(this.element)
-            task.createTask(element, index, this)
+            const task = new Task(this.element, element, index, this)
+            task.createTask()
         })
     }
 }

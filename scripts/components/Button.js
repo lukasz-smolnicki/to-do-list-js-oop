@@ -20,10 +20,9 @@ class Button extends Element {
             }
         })
     }
-    removeElementFromList(_list, _index) {
+    addListiner(_callback, _input) {
         this.element.addEventListener('click', () => {
-            _list.taskList.splice(_index, 1)
-            _list.render()
+            _callback(_input)
         })
     }
 }
