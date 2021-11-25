@@ -19,14 +19,6 @@ The main goal is to:
 
 ## Features
 
-### Tasks
-
-- [x] Add task to the list 
-- [x] Remove task from the list
-- [ ] Mark as done
-- [ ] Mark as important
-- [x] Edit task
-
 ### List
 
 - [ ] Add new list
@@ -34,6 +26,14 @@ The main goal is to:
 - [ ] Filter tasks
 - [ ] Sort by name, date
 - [ ] Save list in localstorage
+
+### Tasks
+
+- [x] Add task to the list 
+- [x] Remove task from the list
+- [ ] Mark as done
+- [ ] Mark as important
+- [x] Edit task
 
 <!-- 
 ## Screenshots
