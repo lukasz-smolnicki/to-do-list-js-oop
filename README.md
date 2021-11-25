@@ -1,4 +1,4 @@
-# to-do-list-js-opp
+# to-do-list-js-oop
 > A simple to-do list app build in JS based on classes.
 > Live demo [_here_](http://#).
 
