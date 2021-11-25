@@ -21,14 +21,15 @@ The main goal is to:
 
 ### Tasks
 
-- [ ] Add task to the list 
-- [ ] Remove task from the list
+- [x] Add task to the list 
+- [x] Remove task from the list
 - [ ] Mark as done
 - [ ] Mark as important
-- [ ] Edit task
+- [x] Edit task
 
 ### List
 
+- [ ] Add new list
 - [ ] Search task
 - [ ] Filter tasks
 - [ ] Sort by name, date
@@ -48,7 +49,7 @@ Project is: _in progress_
 
 ## To improvment
 
-- [ ]  Separate classes by functionality
+- [x]  Separate classes by functionality
 
 ## Todo
 
