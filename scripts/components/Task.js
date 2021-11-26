@@ -12,6 +12,10 @@ class Task extends Element {
         const p = new Paragraph(this.element)
         const date = new Paragraph(this.element)
         p.tagAddText(this.elementData.value)
+        console.log(this.elementData)
+        if (this.elementData.favorite === true) {
+            p.tagAddClass('favorite')
+        }
         date.tagAddText(this.elementData.date)
         const buttonRemove = new Button(this.element)
         buttonRemove.tagAddText('Remove task')
@@ -19,6 +23,14 @@ class Task extends Element {
         const buttonEdit = new Button(this.element)
         buttonEdit.tagAddText('Edit task')
         buttonEdit.addListiner(this.editTask.bind(this))
+        const buttonToggleFavorite = new Button(this.element)
+        if (this.elementData.favorite === false) {
+            buttonToggleFavorite.tagAddText('Add to favorities')
+        } else {
+            buttonToggleFavorite.tagAddText('Remove from favorities')
+        }
+
+        buttonToggleFavorite.addListiner(this.taskToggleFavorite.bind(this))
     }
     removeElementFromList() {
         this.list.taskList.splice(this.index, 1)
@@ -46,5 +58,10 @@ class Task extends Element {
             this.list.taskList[this.index].value = inputValue
             this.list.render()
         }
+    }
+    taskToggleFavorite() {
+        let favorite = this.list.taskList[this.index].favorite
+        this.list.taskList[this.index].favorite = !favorite
+        this.list.render()
     }
 }

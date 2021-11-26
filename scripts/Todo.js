@@ -13,7 +13,10 @@ class Todo {
         } else {
             const inputValue = {
                 value: this.input.getInputValue(),
-                date: new Date
+                date: new Date,
+                favorite: false,
+                editDate: false,
+                numberOfEdits: 0,
             }
             this.input.clearInputValue()
             this.list.pushValueToList(inputValue)
