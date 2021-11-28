@@ -32,7 +32,7 @@ The main goal is to:
 - [x] Add task to the list 
 - [x] Remove task from the list
 - [ ] Mark as done
-- [ ] Mark as important
+- [x] Mark as favorite
 - [x] Edit task
 
 <!-- 
@@ -54,7 +54,6 @@ Project is: _in progress_
 ## Todo
 
 - [ ] Add css styles and switch to darkmode
-- [ ] Voice Capture
 - [ ] Next todo app in react
 
 ## Contact
