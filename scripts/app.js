@@ -1,2 +1,1 @@
-const todo = new Todo()
-const todo1 = new Todo()
+const createNewTodoList = new CreateTodo()
