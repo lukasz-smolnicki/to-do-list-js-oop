@@ -7,7 +7,7 @@ class CreateTodo extends Element {
     }
     render() {
         new HeaderPrimary(this.element, 'to-do-list-js-oop')
-        this.input = new Input(this.element, 'List name (e.g. shopping list)')
+        this.input = new Input(this.element, 'List name (e.g. shopping list)', this.createNewTodoList.bind(this))
         new Button(this.element, 'Add', this.createNewTodoList.bind(this))
     }
     createNewTodoList() {
@@ -30,7 +30,7 @@ class Todo extends Element {
     }
     render() {
         new HeaderSecundary(this.element, this.listName)
-        this.input = new Input(this.element, 'Task name (e.g. buy milk')
+        this.input = new Input(this.element, 'Task name (e.g. buy milk', this.addInputValueToList.bind(this))
         new Button(this.element, 'Add task', this.addInputValueToList.bind(this))
         this.list = new List(this.element)
     }
@@ -127,7 +127,7 @@ class Task extends Element {
     }
     editTask() {
         this.element.innerHTML = ''
-        this.input = new Input(this.element, `${this.elementData.value}`)
+        this.input = new Input(this.element, `${this.elementData.value}`, this.applyChanges.bind(this))
         const buttonDiscard = new Button(this.element, 'Discard changes', this.discardChanges.bind(this))
         const buttonApply = new Button(this.element, 'Apply changes', this.applyChanges.bind(this))
     }

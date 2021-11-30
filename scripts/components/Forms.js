@@ -14,11 +14,19 @@ class Button extends Element {
     }
 }
 class Input extends Element {
-    constructor(_parent, _placeHolder) {
+    constructor(_parent, _placeHolder, _callback) {
         super(_parent)
         this.tag = 'input'
         this.addElement()
+        this.addListiner(_callback)
         this.tagAddPlaceholder(_placeHolder)
+    }
+    addListiner(_callback) {
+        this.element.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                _callback()
+            }
+        })
     }
     getInputValue() {
         return this.element.value
