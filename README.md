@@ -21,23 +21,15 @@ The main goal is to:
 
 ### List
 
-- [ ] Add new list
-- [ ] Search task
-- [ ] Filter tasks
-- [ ] Sort by name, date
-- [ ] Save list in localstorage
+- [x] Add new list
 
 ### Tasks
 
 - [x] Add task to the list 
 - [x] Remove task from the list
-- [ ] Mark as done
-- [ ] Mark as important
+- [x] Mark as done
+- [x] Mark as important
 - [x] Edit task
-
-<!-- 
-## Screenshots
-![Example screenshot](./img/screenshot.png) -->
 
 ## Setup
 
@@ -54,7 +46,6 @@ Project is: _in progress_
 ## Todo
 
 - [ ] Add css styles and switch to darkmode
-- [ ] Voice Capture
 - [ ] Next todo app in react
 
 ## Contact

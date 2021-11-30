@@ -2,6 +2,10 @@ class Element {
     constructor(_parent) {
         this.parent = _parent
     }
+    addElement() {
+        this.element = this.tagCreate(this.tag)
+        this.tagAppend(this.element)
+    }
     tagCreate(_element) {
         const element = document.createElement(_element)
         return (element)

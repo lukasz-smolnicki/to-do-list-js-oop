@@ -1,3 +1,7 @@
 p.favorite {
     font-weight: bolder;
 }
+
+p.done {
+    text-decoration: line-through;
+}
